@@ -1,0 +1,28 @@
+ul.top-menu {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  li.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+    a {
+      text-decoration: none;
+      color: #222;
+      &.active {
+        color: red;
+      }
+    }
+    span {
+      background-color: brown;
+      height: 2px;
+      width: 100%;
+      display: inline-block;
+    }
+  }
+}

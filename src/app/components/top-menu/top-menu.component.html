@@ -1,0 +1,10 @@
+<ul class="top-menu">
+  <li
+    *ngFor="let tab of menus; let i = index; trackBy: tab && tab.title"
+    class="tab"
+    (click)="handleTabClick(i)"
+  >
+    <a href="#" [class.active]="i === currentIndex">{{ tab.title }}</a>
+    <span class="underline" *ngIf="i === currentIndex"></span>
+  </li>
+</ul>
